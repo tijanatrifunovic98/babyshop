@@ -28,7 +28,7 @@ class Database
     {
         $this->dblink = new mysqli($this->hostname, $this->username, $this->password, $this->dbname);
         if ($this->dblink->connect_errno) {
-           // printf("Neuspesno konektovanje na bazu: %s\n", $mysqli->connect_error);
+            //printf("Neuspesno konektovanje na bazu: %s\n", $mysqli->connect_error);
             exit();
         }
         $this->dblink->set_charset("utf8");
